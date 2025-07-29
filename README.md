@@ -46,14 +46,18 @@ QuickFix is a simple, responsive web application that helps customers book trust
 ### Desktop View
 
 ![Desktop Screenshot](images/ds1.png)
+
 ![Desktop Screenshot](images/ds2.png)
+
 ![Desktop Screenshot](images/ds3.png)
 
 ### Mobile View
 
 ![Mobile Screenshot](images/ms1.png)
 
+ 
 ![Mobile Screenshot](images/ms2.png)
+
 
 ![Mobile Screenshot](images/ms3.png)
 
