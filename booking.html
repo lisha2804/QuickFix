@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuickFix – Book a Service</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+
+  <style>
+    :root {
+      --copper: #b36633;
+      --martinique: #323659;
+      --kashmir-blue: #5474a1;
+      --redwood: #5b1f11;
+      --gold-sand: #e7ba80;
+      --ivory: #fdfaf4;
+    }
+
+    body {
+      background-color: var(--ivory);
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .form-section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .booking-card {
+      
+      background-color: white;
+      border: 2px solid var(--redwood);
+      border-radius: 15px;
+      padding: 30px;
+      width: 100%;
+      max-width: 600px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .form-title {
+      color: var(--kashmir-blue);
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    .btn-book {
+      background-color: var(--copper);
+      color: white;
+      border: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-book:hover {
+      background-color: var(--gold-sand);
+      color: #000;
+    }
+
+    .form-label {
+      color: var(--martinique);
+      font-weight: 500;
+    }
+
+    .form-control,
+    .form-select {
+      border-radius: 10px;
+    }
+
+    .confirmation {
+      display: none;
+      text-align: center;
+      margin-top: 20px;
+      font-weight: 500;
+      color: var(--kashmir-blue);
+    }
+  </style>
+</head>
+<body>
+  <section class="form-section">
+    <div class="booking-card">
+      <div class="form-title">Book a Service</div>
+      <form id="bookingForm">
+        <div class="mb-3">
+          <label for="name" class="form-label">Full Name</label>
+          <input type="text" id="name" class="form-control" required />
+        </div>
+
+        <div class="mb-3">
+          <label for="mobile" class="form-label">Mobile Number</label>
+          <input type="tel" id="mobile" class="form-control" pattern="[0-9]{10}" required />
+        </div>
+
+        <div class="mb-3">
+          <label for="service" class="form-label">Service Type</label>
+          <select id="service" name="service" class="form-select" required>
+            <option value="" disabled selected>Select a service</option>
+            <option value="Electrician">Electrician</option>
+            <option value="Plumber">Plumber</option>
+            <option value="Appliance Installation">Appliance Installation</option>
+            <option value="General Repairs">General Repairs</option>
+            <option value="Maintenance Check">Maintenance Check</option>
+            <option value="Emergency Assistance">Emergency Assistance</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="description" class="form-label">Describe the Issue</label>
+          <textarea id="description" class="form-control" rows="1" placeholder="Optional"></textarea>
+        </div>
+
+        <div class="mb-3">
+          <label for="datetime" class="form-label">Preferred Date & Time</label>
+          <input type="datetime-local" id="datetime" class="form-control" required />
+        </div>
+
+        <div class="mb-3">
+          <label for="address" class="form-label">Address / Pincode</label>
+          <input type="text" id="address" class="form-control" required />
+        </div>
+
+        <button type="submit" class="btn btn-book w-100">Book Now</button>
+        <div class="confirmation" id="confirmationMsg">✅Thank You, Your service has been booked!</div>
+
+      </form>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
