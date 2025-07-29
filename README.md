@@ -37,7 +37,7 @@ QuickFix is a simple, responsive web application that helps customers book trust
 
 # Live Demo
 
-[🔗 View Live]()
+[🔗 View Live](https://lisha2804.github.io/QuickFix/)
 
 ---
 
