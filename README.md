@@ -4,23 +4,23 @@ QuickFix is a simple, responsive web application that helps customers book trust
 
 ---
 
-## 🚀 Features
+## Features
 
-### 🧾 Public Booking Form
+### Public Booking Form
 - Enter name, mobile number, service type, issue description, preferred date/time, and address.
 - Validates inputs (e.g., 10-digit mobile).
 - Stores booking data locally in the browser.
 
-### 🛠️ Admin Dashboard
+### Admin Dashboard
 - View all bookings in a card-based layout.
 - Filter by **Service Type** or **Booking Status**.
 - Mark pending bookings as "Completed" or delete completed ones.
 - Shows message when no bookings exist.
 
-### 💾 Data Storage
+### Data Storage
 - Uses **localStorage** to persist bookings without backend setup.
 
-### 📱 Responsive Design
+### Responsive Design
 - Built with **Bootstrap 5** + custom CSS.
 - Mobile-friendly UI for both customer and admin views.
 
@@ -32,5 +32,29 @@ QuickFix is a simple, responsive web application that helps customers book trust
 - **CSS3**
 - **JavaScript (ES6)**
 - **Bootstrap 5**
+
+---
+
+# Live Demo
+
+[🔗 View Live]()
+
+---
+
+# Screenshots
+
+### Desktop View
+
+![Desktop Screenshot](images/ds1.png)
+![Desktop Screenshot](images/ds2.png)
+![Desktop Screenshot](images/ds3.png)
+
+### Mobile View
+
+![Mobile Screenshot](images/ms1.png)
+
+![Mobile Screenshot](images/ms2.png)
+
+![Mobile Screenshot](images/ms3.png)
 
 ---
